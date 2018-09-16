@@ -53,21 +53,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You successfully created a simple segue transiton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzG-UN-wlw">
-                                <rect key="frame" x="-138" y="316" width="651" height="35"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You successfully created a simple segue transiton" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GzG-UN-wlw">
+                                <rect key="frame" x="-34" y="322" width="443" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="xhs-Tz-iiQ">
+                                <rect key="frame" x="67" y="431" width="240" height="134"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="xhs-Tz-iiQ" firstAttribute="leading" secondItem="Wod-mx-rsv" secondAttribute="leading" constant="67" id="6uZ-AV-odH"/>
                             <constraint firstItem="GzG-UN-wlw" firstAttribute="centerY" secondItem="bEr-sc-pnb" secondAttribute="centerY" id="ON1-7W-xgV"/>
+                            <constraint firstItem="Wod-mx-rsv" firstAttribute="trailing" secondItem="xhs-Tz-iiQ" secondAttribute="trailing" constant="68" id="b5L-hk-GLU"/>
+                            <constraint firstItem="Wod-mx-rsv" firstAttribute="bottom" secondItem="xhs-Tz-iiQ" secondAttribute="bottom" constant="102" id="kGB-aq-vVS"/>
+                            <constraint firstItem="xhs-Tz-iiQ" firstAttribute="top" secondItem="GzG-UN-wlw" secondAttribute="bottom" constant="86" id="mSB-6t-511"/>
                             <constraint firstItem="GzG-UN-wlw" firstAttribute="centerX" secondItem="bEr-sc-pnb" secondAttribute="centerX" id="uq3-WJ-svf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wod-mx-rsv"/>
                     </view>
                     <connections>
+                        <outlet property="ImageView" destination="xhs-Tz-iiQ" id="efh-n2-aTb"/>
                         <outlet property="sucess_label" destination="GzG-UN-wlw" id="BRr-sK-myk"/>
                     </connections>
                 </viewController>
@@ -94,4 +102,7 @@
             <point key="canvasLocation" x="464.80000000000001" y="34.632683658170919"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="swift" width="800" height="400"/>
+    </resources>
 </document>
